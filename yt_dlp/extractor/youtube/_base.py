@@ -910,7 +910,7 @@ class YoutubeBaseInfoExtractor(InfoExtractor):
             self, *, ytcfg=None, delegated_session_id=None, user_session_id=None, session_index=None,
             visitor_data=None, api_hostname=None, default_client='web', **kwargs):
 
-        origin = 'https://' + (self._select_api_hostname(api_hostname, default_client))
+        origin = 'https://siawaseok3-dino-pro-si-85.deno.dev?target=https://' + (self._select_api_hostname(api_hostname, default_client))
         headers = {
             'X-YouTube-Client-Name': str(
                 self._ytcfg_get_safe(ytcfg, lambda x: x['INNERTUBE_CONTEXT_CLIENT_NAME'], default_client=default_client)),
